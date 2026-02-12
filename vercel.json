@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "rewrites": [
     {
@@ -6,3 +7,8 @@
     }
   ]
 }
+=======
+git add vercel.json
+git commit -m "Fix SPA routing for Vercel deployment"
+git push origin main
+>>>>>>> 85ce84aeb558160b8ae6293b3bd1a31e9932dfaf
