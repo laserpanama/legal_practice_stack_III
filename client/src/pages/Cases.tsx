@@ -4,6 +4,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
+import { Kanban } from "lucide-react";
+import { useLocation } from "wouter";
+
+// Inside your Cases component:
+const [, setLocation] = useLocation();
+
+// Add this button in your header:
+<Button 
+  onClick={() => setLocation('/cases/visualization')} 
+  className="gap-2"
+>
+  <Kanban className="w-4 h-4" />
+  Vista Visual
+</Button>
+
   Table,
   TableBody,
   TableCell,
